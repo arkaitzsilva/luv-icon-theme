@@ -59,6 +59,7 @@
     <rect
        style="fill:#ef5350;fill-opacity:1;stroke-width:0.529167"
        id="rect1"
+       class="error"
        width="0.79374993"
        height="0.26458332"
        x="2.3812499"
