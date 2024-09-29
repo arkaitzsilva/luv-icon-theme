@@ -27,7 +27,7 @@
      inkscape:cx="11"
      inkscape:cy="11"
      inkscape:window-width="1354"
-     inkscape:window-height="718"
+     inkscape:window-height="720"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -56,14 +56,6 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:#ef5350;fill-opacity:1;stroke-width:0.529167"
-       id="rect1"
-       class="error"
-       width="0.79374993"
-       height="0.26458332"
-       x="2.3812499"
-       y="4.2333331" />
     <path
        id="battery-22"
        class="error"
@@ -74,5 +66,10 @@
        class="error"
        style="fill:#ef5350;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="M 4.2333333 2.9104167 A 1.3229166 1.3229166 0 0 0 2.9104167 4.2333333 A 1.3229166 1.3229166 0 0 0 4.2333333 5.55625 A 1.3229166 1.3229166 0 0 0 5.55625 4.2333333 A 1.3229166 1.3229166 0 0 0 4.2333333 2.9104167 z M 4.2333333 3.175 C 4.3668899 3.175 4.5004467 3.2642833 4.4979167 3.4426839 L 4.4979167 4.2333333 C 4.4999567 4.3820805 4.378359 4.5033406 4.2291992 4.5010173 C 4.0832788 4.4987373 3.9667517 4.3788515 3.96875 4.2333333 L 3.96875 3.4426839 C 3.96622 3.2642833 4.0997768 3.175 4.2333333 3.175 z M 4.2333333 4.7656006 C 4.3794586 4.7656006 4.4979167 4.8840587 4.4979167 5.0301839 C 4.4979167 5.1763092 4.3794586 5.2947673 4.2333333 5.2947673 C 4.0872082 5.2947673 3.96875 5.1763091 3.96875 5.0301839 C 3.96875 4.8840588 4.0872082 4.7656006 4.2333333 4.7656006 z " />
+    <path
+       id="rect1"
+       class="error"
+       style="fill:#ef5350;stroke:none;stroke-width:0.529167;fill-opacity:1"
+       d="M 2.38125 4.2333333 L 2.38125 4.4979167 L 2.6701213 4.4979167 A 1.5874999 1.5874999 0 0 1 2.6458333 4.2333333 L 2.38125 4.2333333 z " />
   </g>
 </svg>
