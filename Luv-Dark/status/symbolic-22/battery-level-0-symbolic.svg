@@ -66,6 +66,7 @@
     <rect
        style="opacity:1;fill:#ef5350;fill-opacity:1;stroke-width:0.0797744;stroke-linecap:round;stroke-linejoin:round"
        id="rect1"
+       class="error"
        width="1.0583333"
        height="0.26458344"
        x="2.3812499"
