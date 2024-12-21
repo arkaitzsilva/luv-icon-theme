@@ -1,15 +1,26 @@
 {
   description = "Luv Icon Theme";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-  };
-
-  outputs = { self, nixpkgs }: {
-    packages.x86_64-linux = let
+  outputs = { self, nixpkgs, ... }: {
+    packages.x86_64-linux.luvIconTheme = let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
-    in {
-      luv-icon-theme = pkgs.callPackage ./default.nix {};
+    in pkgs.stdenv.mkDerivation {
+      name = "luv-icon-theme";
+      src = ./.;
+      installPhase = ''
+        mkdir -p $out/share/icons/${pname}
+        cp -r Luv-Dark/* $out/share/icons/${pname}/
+      '';
+      meta = with pkgs.lib; {
+        description = "Un tema de iconos Luv para Linux";
+        homepage = "https://github.com/arkaitzsilva/luv-icon-theme";
+        license = licenses.gpl3Plus;
+        maintainers = [ maintainers.arkaitzsilva ];
+      };
+    };
+
+    nixosModules.luvIconTheme = { config, pkgs, ... }: {
+      environment.systemPackages = [ pkgs.luvIconTheme ];
     };
   };
 }
