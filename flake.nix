@@ -1,23 +1,41 @@
 {
-  description = "Luv-Dark Icon Theme";
+  lib,
+  stdenvNoCC,
+  fetchFromGitHub,
+  gtk3,
+  xdg-utils,
+}:
+stdenvNoCC.mkDerivation rec {
+  pname = "luv-icon-theme";
+  version = "0.1";
 
-  outputs = { self, nixpkgs, ... }: {
-    packages.x86_64-linux.luv-icon-theme = let
-      pkgs = import nixpkgs { system = "x86_64-linux"; };
-    in pkgs.stdenv.mkDerivation {
-      name = "luv-dark-icon-theme";
-      src = ./.;
-      installPhase = ''
-        mkdir -p $out/share/icons
-        cp -r Luv-Dark $out/share/icons/
-      '';
-      meta = with pkgs.lib; {
-        description = "luv-icon-theme";
-        homepage = "https://github.com/arkaitzsilva/luv-icon-theme";
-        license = licenses.gpl3Plus;
-        maintainers = [ maintainers.arkaitzsilva ];
-      };
-    };
+  src = fetchFromGitHub {
+    owner = "arkaitzsilva";
+    repo = "luv-icon-theme";
+    rev = "${version}";
+    hash = "lib.fakeSha256";
+  };
+
+  nativeBuildInputs = [
+    gtk3
+    xdg-utils
+  ];
+
+  installPhase = ''
+    runHook preInstall
+
+    install -d $out/share/icons/Luv-Dark
+    cp -r . $out/share/icons/Luv-Dark
+    gtk-update-icon-cache -f -t $out/share/icons/Luv-Dark && xdg-desktop-menu forceupdate
+
+    runHook postInstall
+  '';
+
+  meta = with lib; {
+    description = "Luv Icon Theme";
+    homepage = "https://github.com/arkaitzsilva/luv-icon-theme";
+    license = with licenses; [ gpl3Only ];
+    platforms = platforms.linux;
+    maintainers = with maintainers; [ arkaitzsilva ];
   };
 }
-
