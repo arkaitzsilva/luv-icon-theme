@@ -8,7 +8,7 @@ stdenv.mkDerivation rec {
     owner = "arkaitzsilva";de GitHub
     repo = "luv-icon-theme";
     rev = "main";
-    sha256 = "0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"; # Cambia esto por el hash correcto
+    sha256 = "1ic6z16wa899w1j19gagwys37q0srjc44khvp54h201r45k9g821"; # nix-prefetch-url --unpack https://github.com/arkaitzsilva/luv-icon-theme/archive/main.tar.gz
   };
 
   installPhase = ''
