@@ -6,13 +6,27 @@
    version="1.1"
    id="svg1"
    sodipodi:docname="brave.svg"
-   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs1" />
+     id="defs1">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1"
+       x="-0.051085497"
+       y="-0.045265991"
+       width="1.102171"
+       height="1.090532">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.52474054"
+         id="feGaussianBlur1" />
+    </filter>
+  </defs>
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
@@ -25,9 +39,9 @@
      showgrid="true"
      inkscape:zoom="12.529048"
      inkscape:cx="16.042719"
-     inkscape:cy="14.087263"
+     inkscape:cy="14.047356"
      inkscape:window-width="1354"
-     inkscape:window-height="718"
+     inkscape:window-height="732"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -49,6 +63,10 @@
        gridanglez="30"
        visible="true" />
   </sodipodi:namedview>
+  <path
+     d="M 11.585938,3.0003773 9.6230469,4.9632679 C 8.8686522,4.8595759 8.1169404,4.9631591 7.4667969,5.2660023 6.5799707,5.6790946 5.8091588,6.2902451 5.2753906,6.9906117 L 3.6738281,9.0882679 4.7832031,10.197643 3.9453125,11.875377 6.6523438,23.611705 C 6.9508425,24.903118 7.7498933,26.024373 8.875,26.726939 l 6.064453,3.791016 c 0.647216,0.405509 1.473878,0.405509 2.121094,0 L 23.125,26.726939 c 1.123998,-0.703123 1.924126,-1.823683 2.222656,-3.115234 L 28.054688,11.875377 27.216797,10.197643 28.326172,9.0882679 26.724609,6.9906117 C 26.190841,6.2902451 25.420029,5.6790946 24.533203,5.2660023 23.88306,4.9631591 23.131348,4.8595759 22.376953,4.9632679 L 20.414062,3.0003773 H 20 Z"
+     id="path1"
+     style="opacity:0.3;fill:#000000;fill-opacity:1;filter:url(#filter1)" />
   <path
      d="M 11.585938,2 9.6230469,3.9628906 C 8.8686522,3.8591986 8.1169404,3.9627818 7.4667969,4.265625 6.5799707,4.6787173 5.8091588,5.2898678 5.2753906,5.9902344 L 3.6738281,8.0878906 4.7832031,9.1972656 3.9453125,10.875 6.6523438,22.611328 C 6.9508425,23.902741 7.7498933,25.023996 8.875,25.726562 l 6.064453,3.791016 c 0.647216,0.405509 1.473878,0.405509 2.121094,0 L 23.125,25.726562 c 1.123998,-0.703123 1.924126,-1.823683 2.222656,-3.115234 L 28.054688,10.875 27.216797,9.1972656 28.326172,8.0878906 26.724609,5.9902344 C 26.190841,5.2898678 25.420029,4.6787173 24.533203,4.265625 23.88306,3.9627818 23.131348,3.8591986 22.376953,3.9628906 L 20.414062,2 H 20 Z"
      id="path7"
