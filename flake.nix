@@ -7,8 +7,8 @@
       let
         pkgs = import nixpkgs { system = "x86_64-linux"; };
       in pkgs.stdenv.mkDerivation {
-        pname = "Luv-Icon-Theme";
-        version = "1.0";
+        pname = "luv-icon-theme";
+        version = "1.0.1";
 
         src = ./.;
 
@@ -19,7 +19,7 @@
 
         meta = with pkgs.lib; {
           description = "Luv Icon Theme";
-          license = licenses.gpl3; # o la que corresponda
+          license = licenses.gpl3;
           platforms = platforms.all;
         };
       };
